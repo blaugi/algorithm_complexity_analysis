@@ -21,10 +21,10 @@ def gerar_dados_random(N):
     return L
 
 def agora():
-    return int(round(time.time() * 1000))
+    return time.perf_counter()
     #return datetime.now()
 
 def dif_time(a, b):
     #return b.second - a.second
-    return a - b
+    return int(round((a - b) * 1000))
 
